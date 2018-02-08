@@ -11,7 +11,7 @@
       "js": [
         "jquery-3.3.1.min.js",
         "jquery-ui.min.js",
-        "script.js"
+        "content-script.js"
       ],
       "css": [
         "jquery-ui.min.css"

@@ -1,6 +1,4 @@
 
-
-
 $(function(){
   console.log("START content script");
 
@@ -37,3 +35,4 @@ $(function(){
 
 // http://dotnsf.blog.jp/archives/1058669933.html
 // https://qiita.com/ororog/items/146b7cdac85a48690c1e
+
