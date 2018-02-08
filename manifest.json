@@ -1,0 +1,30 @@
+{
+  "name": "datepicker-for-grid",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "datepicker for grid",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://s.questetra.net/*"
+      ],
+      "js": [
+        "jquery-3.3.1.min.js",
+        "jquery-ui.min.js",
+        "script.js"
+      ],
+      "css": [
+        "jquery-ui.min.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "clipboardRead"
+  ]
+}
