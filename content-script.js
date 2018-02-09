@@ -9,7 +9,7 @@ $(function(){
       .each(function(index){
         $(this).append(
           "<div class='x-box-item' style='right:auto; left:80px; top:2px;'>" +
-            "<input id='chrome-ext-01-input-" + index + "' type='text' style='height:18px;' />" +
+            "<input id='chrome-ext-01-input-" + index + "' type='text' style='height:18px;' placeholder='Copy selected date' />" +
           "</div>"
         );
 
@@ -18,9 +18,12 @@ $(function(){
           onSelect: function(){
             var dateObj = $(this).datepicker("getDate");
             var value = $.datepicker.formatDate("yy/mm/dd", dateObj);
+            // Copy it to clipboard
             chrome.runtime.sendMessage({
                 text: value.slice(2)
             });
+            // Set it to innerHTML of the input tab.
+            $(this).val(value.slice(2));
           }
         });
 
