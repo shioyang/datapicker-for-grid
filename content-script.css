@@ -1,0 +1,16 @@
+
+.datepicker-for-grid.trigger-button {
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+    z-index: 99999;
+}
+
+.datepicker-for-grid.datepicker-area {
+    right: auto;
+    left: 80px;
+    top: 2px;
+}
+.datepicker-for-grid.datepicker-area input {
+    height: 18px;
+}

@@ -14,7 +14,8 @@
         "content-script.js"
       ],
       "css": [
-        "jquery-ui.min.css"
+        "jquery-ui.min.css",
+        "content-script.css"
       ]
     }
   ],

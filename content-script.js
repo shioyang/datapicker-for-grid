@@ -8,12 +8,12 @@ $(function(){
     $("div.list-grid div.x-toolbar div.x-box-target")
       .each(function(index){
         $(this).append(
-          "<div class='x-box-item' style='right:auto; left:80px; top:2px;'>" +
-            "<input id='chrome-ext-01-input-" + index + "' type='text' style='height:18px;' placeholder='Copy selected date' />" +
+          "<div class='x-box-item datepicker-for-grid datepicker-area'>" +
+            "<input id='datepicker-for-grid-input-" + index + "' type='text' placeholder='Copy selected date' />" +
           "</div>"
         );
 
-        $("input#chrome-ext-01-input-" + index).datepicker({
+        $("input#datepicker-for-grid-input-" + index).datepicker({
           dateFormat: "yy/mm/dd",
           onSelect: function(){
             var dateObj = $(this).datepicker("getDate");
@@ -33,9 +33,9 @@ $(function(){
 
 
   $("body")
-    .append("<button id='chrome-ext-01-button01' style='position:fixed; left:20px; bottom:30px; z-index:99999;'>Date Picker</button>");
+    .append("<button id='datepicker-for-grid-button01' class='datepicker-for-grid trigger-button'>Date Picker</button>");
 
-  $("#chrome-ext-01-button01").on("click", function(){
+  $("#datepicker-for-grid-button01").on("click", function(){
     addDatepicker();
   });
 
