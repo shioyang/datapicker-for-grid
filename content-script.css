@@ -9,8 +9,18 @@
 .datepicker-for-grid.datepicker-area {
     right: auto;
     left: 80px;
-    top: 2px;
+    top: 3px;
 }
-.datepicker-for-grid.datepicker-area input {
-    height: 18px;
+
+.datepicker-for-grid.datepicker-area div  {
+    display: inline;
+    position: relative;
+    top: -3px;
+    padding: 0 5px;
+}
+
+.datepicker-for-grid.datepicker-area div input {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
 }

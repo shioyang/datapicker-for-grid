@@ -9,9 +9,25 @@ $(function(){
       .each(function(index){
         $(this).append(
           "<div class='x-box-item datepicker-for-grid datepicker-area'>" +
-            "<input id='datepicker-for-grid-input-" + index + "' type='text' placeholder='Copy selected date' />" +
+            "<img src='" + chrome.extension.getURL('resource/icon_x128.png') + "' alt='datepicker' width='16px' height='16px' />" +
+            "<div>" +
+              "<input id='datepicker-for-grid-input-" + index + "' type='text' disabled />" +
+            "</div>" +
           "</div>"
         );
+
+        $(this).find("div.datepicker-for-grid.datepicker-area img")
+          .on("click", function() {
+            $(this).parent().find("input").datepicker("show");
+          });
+
+        // $("<img>", {
+        //     src: chrome.extension.getURL("resource/icon_x128.png"),
+        //     alt: "datepicker",
+        //     width: "16px",
+        //     height: "16px"
+        //   })
+        //   .appendTo("div.x-box-item.datepicker-for-grid.datepicker-area");
 
         $("input#datepicker-for-grid-input-" + index).datepicker({
           dateFormat: "yy/mm/dd",
