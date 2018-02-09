@@ -26,5 +26,10 @@
   },
   "permissions": [
     "clipboardRead"
-  ]
+  ],
+  "icons": {
+    "16": "resource/icon_x16.png",
+    "48": "resource/icon_x48.png",
+    "128": "resource/icon_x128.png"
+  }
 }
