@@ -21,14 +21,6 @@ $(function(){
             $(this).parent().find("input").datepicker("show");
           });
 
-        // $("<img>", {
-        //     src: chrome.extension.getURL("resource/icon_x128.png"),
-        //     alt: "datepicker",
-        //     width: "16px",
-        //     height: "16px"
-        //   })
-        //   .appendTo("div.x-box-item.datepicker-for-grid.datepicker-area");
-
         $("input#datepicker-for-grid-input-" + index).datepicker({
           dateFormat: "yy/mm/dd",
           onSelect: function(){
