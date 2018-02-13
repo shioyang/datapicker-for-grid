@@ -25,6 +25,15 @@
     ],
     "persistent": false
   },
+  "browser_action": {
+    "default_icon": {
+      "16": "resource/icon_x16.png",
+      "48": "resource/icon_x48.png",
+      "128": "resource/icon_x128.png"
+    },
+    "default_title": "datepicker-for-grid",
+    "default_popup": "popup.html"
+  },
   "permissions": [
     "clipboardRead"
   ],
